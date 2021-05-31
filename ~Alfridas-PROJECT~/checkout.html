@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Out</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav>
+    <ul class="menu">
+      <li class="logo"><a href="#">My logo</a></li>
+      <li class="item"><a href="index.html">Home</a></li>
+      <li class="item"><a href="about.html">About</a></li>
+      <li class="item"><a href="marketplace.html">Marketplace</a></li>
+      <li class="item has-submenu">
+        <a tabindex="0">Services</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Become a seller</a></li>
+          <li class="subitem"><a href="#">Trade marketing</a></li>
+        </ul>
+      </li>
+      <li class="item has-submenu">
+        <a tabindex="0">Transport</a>
+        <ul class="submenu">
+          <li class="subitem"><a href="#">Teleport</a></li>
+          <li class="subitem"><a href="#">UFO</a></li>
+          <li class="subitem"><a href="#">3D-print file</a></li>
+        </ul>
+      </li>
+      <li class="item"><a href="contact.html">Contact</a></li>
+    
+      <li class="item button"><a href="login-signup.html">Log In</a></li>
+      <li class="item button secondary"><a href="login-signup.html">Sign Up</a></li>
+      <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+    </ul>
+  </nav>
+  <div class="main-page flex">
+    <!-- CHECKOUT FORM -->
+    <form name="checkout" method="post" class="myForm">
+      <div class="row">
+        <div class="column">
+          <div class="input-group">
+            <label for="customer_name">Name </label>
+            <input id="customer_name">
+          </div>
+          <div class="input-group">
+            <label for="phone_number">Phone (For delivery updates)</label>
+            <input type="tel" id="phone_number">
+          </div>
+          <div class="input-group">
+            <label for="email_address">Email </label>
+            <input type="email" id="email_address">
+          </div>
+          <div class="input-group">
+            <label for="Country">Planet </label>
+            <select id="country">
+              <option value="" selected="selected">Select One</option>
+              <option value="office" >Earth</option>
+              <option value="town_hall" >Some planet far away</option>
+              <option value="telepathy" >A close exo-planet</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label for="dropoff_place">House number and street name</label>
+            <input type="text" id="dropoff_place" list="destinations">
+          </div>
+          <fieldset class="extras">
+            <legend>Extras</legend>
+            <label> <input type="checkbox" id="special-offers" value="special-offers"> I would like to receive e-mails with special offers (optional) </label>
+            <label> <input type="checkbox" id="create_account" value="wheelchair"> Teleport shipping </label>
+          </fieldset>
+        </div>
+        <div class="column">
+          <fieldset class="payment">
+            <legend>Payment method</legend>
+            <label> <input type="radio" name="payment_option" id="pay_pal" value="payment"><i class="fa fa-paypal" aria-hidden="true"></i> PayPal </label>
+            <label> <input type="radio" name="payment_option" id="credit_card" value="payment"><i class="fa fa-credit-card-alt" aria-hidden="true"></i> Credit Card </label>
+            <label> <input type="radio" name="payment_option" id="klarna" value="payment"><i class="fa fa-btc" aria-hidden="true"></i> Crypto coins </label>
+          </fieldset>
+        </div>
+      </div>
+      <div class="row">
+        <button id="submit">Place order</button>
+      </div>
+    </form>
+    <!-- END OF CHECKOUT FORM -->
+    <div class="order-details">
+      <h2>Order details</h2>
+      <img src="img/marketplace-pic01.jpg" width="400px" alt="Picture of your order">
+    </div>
+  </div>
+  <!-- FOOTER SECTION -->
+  <div class="footer">
+    <h2>Feel free to come back any time, it's always nice to have you here!</h2>
+    <ul>
+      <li><a href="#">Our Policy</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <h3>&copy Copyright by INTERGALAXEN</h3>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>
